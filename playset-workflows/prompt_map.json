@@ -1,0 +1,183 @@
+{
+  "_about": "Maps the Playset frontend brief to the three text inputs of the packaged workflows (asset, style, world). The per-type rules now live inside each workflow as node 4, so the categories block below is reference only.",
+  "workflow": {
+    "packaged": [
+      "playset_prop",
+      "playset_floor",
+      "playset_wall",
+      "playset_wall_opening",
+      "playset_decal"
+    ],
+    "inputs": {
+      "asset": "node 1, value",
+      "style": "node 2, value. styles[brief.style]",
+      "world": "node 3, value. settings[brief.setting] + palette sentence + brief.details"
+    },
+    "optional": {
+      "quality": "node 8, model.quality: low for samples, medium or high for the final pack",
+      "size": "node 8, model.size"
+    },
+    "one_run_per": "asset per style",
+    "seed_note": "The Flare node accepts a seed but the node tooltip says it is not implemented yet. Regenerate means run again, not run with a chosen seed."
+  },
+  "defaults": {
+    "perspective": "isometric",
+    "tile_px": [
+      128,
+      64
+    ],
+    "light": "top-left",
+    "prop_facing": "lower-right",
+    "generate_px": 1024,
+    "derived_px": [
+      1024,
+      512,
+      256
+    ],
+    "projection": "2:1 dimetric, 26.565 degrees. Tiles, walls and grid are exact because code draws them. Props are model-drawn and only approximate.",
+    "tiles_per_texture": {
+      "default": 4,
+      "meaning": "One texture is spread across a 4 by 4 block of tiles; each tile samples its own sixteenth. Detail reads 4 times larger, seams can only occur every 4 tiles. Expose as a user setting (1, 2, 4, 8)."
+    },
+    "generate_px_note": "1024 is what was tested. 2048 is untested."
+  },
+  "styles": {
+    "pixel": "ART STYLE: pixel art. Sharp square pixels, hard edges, no anti-aliasing, no gradients, no blur. Chunky readable shapes and a small limited palette, as if drawn on a low resolution grid and scaled up with nearest neighbour.",
+    "paper": "ART STYLE: paper cut illustration. Flat layers of coloured paper with clean cut edges, small soft drop shadows between the layers, faint paper fibre texture. No outlines, no gradients.",
+    "clay": "ART STYLE: handmade clay model. Soft rounded shapes, matte clay surface with faint fingerprints and tool marks, soft diffuse shading. No outlines."
+  },
+  "settings": {
+    "dark_fantasy": "WORLD: dark fantasy. Crypts, stone ruins, candlelight, worn iron and old bone.",
+    "high_fantasy": "WORLD: high fantasy. Bright kingdoms, enchanted forests, banners, polished steel and magic crystals.",
+    "scifi": "WORLD: science fiction. Space stations, clean panels, glowing screens, cables and machinery.",
+    "post": "WORLD: post-apocalyptic. Rust, scrap metal, patched fabric, overgrown concrete and salvaged tech.",
+    "urban": "WORLD: modern city. Apartments, shops, street furniture, signage without readable words.",
+    "nautical": "WORLD: nautical. Harbours, wooden ships, rope, barrels, lanterns and weathered planks.",
+    "horror": "WORLD: horror. Abandoned rooms, damp walls, flickering light, unsettling but not gory.",
+    "cozy": "WORLD: cozy farming life. Cottages, gardens, crops, warm wood and handmade objects."
+  },
+  "palettes": {
+    "_sentence": "Use only these colours and close tints of them: {hex list}.",
+    "violet_crypt": [
+      "#2b1e3d",
+      "#4a3168",
+      "#7b4fa8",
+      "#c09bd8",
+      "#f2e3c6"
+    ],
+    "damp_forest": [
+      "#14212b",
+      "#1f4a52",
+      "#2f8a7a",
+      "#7fd4a8",
+      "#e8f5d8"
+    ],
+    "amber_desert": [
+      "#2a1410",
+      "#6b2c1e",
+      "#c25a2b",
+      "#e8a054",
+      "#f7e2b8"
+    ],
+    "abyssal": [
+      "#0d1520",
+      "#17306b",
+      "#2f6fd0",
+      "#64c8f0",
+      "#dff4ff"
+    ],
+    "mono": [
+      "#1a1a1a",
+      "#444444",
+      "#828282",
+      "#c5c5c5",
+      "#f3f3f3"
+    ],
+    "from_ref": "No hex list. Attach brief.reference as a reference image and use the sentence: Take the colour palette from the reference image."
+  },
+  "categories": {
+    "tiles_floor": {
+      "frontend_category": "tiles",
+      "rules": "RULES: a seamless tileable ground texture showing the surface of one floor tile. Viewed perfectly straight down, orthographic, completely flat, no perspective, no horizon. Evenly lit with no light direction. Flat even colour: no gradients, no lighting, no highlights, no bright or dark patches; brightness and colour are identical in every corner and along every edge. Fills the whole frame edge to edge and repeats seamlessly on all four sides. No grid lines, no objects, no cast shadows, no vignette, no border, no text.",
+      "size": "1024x1024",
+      "background": "opaque",
+      "backend_steps": [
+        "seam check by tiling 2x2",
+        "rotate 45 degrees",
+        "scale height 50 percent",
+        "mask to 2:1 diamond",
+        "downscale to tile_px",
+        "palette lock"
+      ],
+      "detail_note": "Keep detail small to medium and evenly scattered so nothing large is cut by an edge. Do not ask for a few big elements: tested, it makes seams much worse and pushes the model off-brief on plain surfaces. Make detail look bigger by mapping the texture across several tiles instead."
+    },
+    "tiles_wall": {
+      "frontend_category": "tiles",
+      "rules": "RULES: a flat wall panel texture. Viewed perfectly front-on as an orthographic elevation, no perspective, no floor or ceiling visible. Evenly lit with no light direction. Flat even colour: no gradients, no lighting, no highlights, no bright or dark patches; brightness and colour are identical in every corner and along every edge. Fills the whole frame edge to edge and tiles seamlessly from left to right. No windows, no doors, no objects, no cast shadows, no vignette, no border, no text.",
+      "size": "1024x1024",
+      "background": "opaque",
+      "backend_steps": [
+        "seam check left to right",
+        "skew into left wall panel and right wall panel",
+        "downscale",
+        "palette lock"
+      ],
+      "detail_note": "Keep detail small to medium and evenly scattered so nothing large is cut by an edge. Do not ask for a few big elements: tested, it makes seams much worse and pushes the model off-brief on plain surfaces. Make detail look bigger by mapping the texture across several tiles instead."
+    },
+    "props": {
+      "frontend_category": "props",
+      "rules": "RULES: a single game prop sprite for a 2D isometric game, 2:1 isometric game projection: ground edges rise exactly 1 pixel for every 2 pixels across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front of the object faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no other objects, no text.",
+      "asset_suffix": "It occupies a footprint of {w} by {d} tiles and is about {h} tiles tall.",
+      "size": "1024x1024",
+      "background": "transparent",
+      "backend_steps": [
+        "alpha threshold: 240 and above to 255, 40 and below to 0",
+        "trim to content",
+        "check facing, flip if lower-left",
+        "scale so base width matches footprint",
+        "set anchor at bottom centre of footprint",
+        "palette lock",
+        "write footprint and walkable to manifest"
+      ]
+    },
+    "icons": {
+      "frontend_category": "icons",
+      "rules": "RULES: a single inventory icon of one object, viewed straight on, centred, filling most of the frame with a small empty margin. Evenly lit. Transparent background. No frame, no border, no cast shadow, no other objects, no text.",
+      "size": "1024x1024",
+      "background": "transparent",
+      "backend_steps": [
+        "alpha threshold",
+        "trim",
+        "pad to square",
+        "downscale",
+        "palette lock"
+      ]
+    },
+    "bg": {
+      "frontend_category": "bg",
+      "rules": "RULES: a full isometric scene used as a non-interactive background. True isometric projection, high three-quarter view, no perspective convergence. Lit from the top-left. No characters, no text, no UI.",
+      "size": "1536x1024",
+      "background": "opaque",
+      "backend_steps": [
+        "downscale",
+        "palette lock"
+      ]
+    }
+  },
+  "not_covered_here": {
+    "sheets": "Character sprite sheets. Owned by the character workflow. Isometric needs four diagonal directions, not up down left right.",
+    "anim": "Built on the sprite sheets. Owned by the character workflow.",
+    "sfx": "Audio. Separate workflow.",
+    "music": "Audio. Separate workflow."
+  },
+  "open_issues": [
+    "Pixel art at 2048 px: the model draws fake large pixels that do not sit on a true grid. Suggested fix: generate at 1024, then the backend downsizes with nearest neighbour to the native sprite size and snaps colours to the chosen palette. The palette hex lists already exist in the frontend, so this step costs nothing extra.",
+    "2048 px with a transparent background on Flare has not been tested yet. Everything proven so far was 1024 px at low quality.",
+    "Regenerate with a new seed: the seed input on the Flare node is not implemented yet, so a rerun gives a new result but it cannot be reproduced or controlled.",
+    "Frontend copy says tilesets are autotile-ready. We do not generate transition or autotile sets. Floors and walls are single seamless textures with hard edges between types.",
+    "Pack sizes: 50 tiles plus 25 props plus 25 icons plus 25 backgrounds per style is a lot of paid generations. The 30 asset test batch ran about one job at a time and took about 5 minutes at 1024 px low quality. 2K at higher quality will be slower and cost more per image.",
+    "The tiles category needs an asset list that says which entries are floors and which are walls, because they use different rules.",
+    "Prop angle: the model cannot reliably tell 2:1 (26.6 degrees) from true isometric (30 degrees). Small or organic props hide it; long straight-edged props show it. Options: prompt for 2:1 only (done here), backend vertical squash to 86.6 percent if props come out at 30, a 2:1 footprint outline as a reference image (untested), and generating flat props such as rugs as square textures projected by code.",
+    "Seams: tested the WAS node Image Seamless Texture after Flare. It cross-fades the edges, which ghosts flat graphic styles like riso (double-exposure look). Do not use it for these styles. Untested better option: roll the texture by 50 percent so the seam sits in the middle, then run a Flare edit with a cross-shaped mask to redraw the seam. Costs a second generation per texture."
+  ]
+}

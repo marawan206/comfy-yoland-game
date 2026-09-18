@@ -1,0 +1,111 @@
+{
+  "1": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "ASSET: mossy limestone crypt floor, worn slabs with thin cracks."
+    },
+    "_meta": {
+      "title": "INPUT asset (what to draw)"
+    }
+  },
+  "2": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "ART STYLE: detailed 16-bit pixel art. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions. No blur, no smooth gradients."
+    },
+    "_meta": {
+      "title": "INPUT style"
+    }
+  },
+  "3": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "WORLD: dark fantasy. Crypts, stone ruins, candlelight, worn iron and old bone. Use only these colours and close tints of them: #2b1e3d, #4a3168, #7b4fa8, #c09bd8, #f2e3c6."
+    },
+    "_meta": {
+      "title": "INPUT world (setting + palette + details)"
+    }
+  },
+  "4": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "RULES: a seamless tileable floor or ground texture viewed perfectly straight down, orthographic, flat, no perspective, no horizon. Small to medium evenly scattered detail, nothing large cut by an edge. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats on all four sides. No objects, no shadows, no vignette, no border, no text."
+    },
+    "_meta": {
+      "title": "FIXED rules for floor (do not change)"
+    }
+  },
+  "5": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "1",
+        0
+      ],
+      "string_b": [
+        "4",
+        0
+      ],
+      "delimiter": "\n\n"
+    }
+  },
+  "6": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "5",
+        0
+      ],
+      "string_b": [
+        "2",
+        0
+      ],
+      "delimiter": "\n\n"
+    }
+  },
+  "7": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "6",
+        0
+      ],
+      "string_b": [
+        "3",
+        0
+      ],
+      "delimiter": "\n\n"
+    }
+  },
+  "8": {
+    "class_type": "OpenAIGPTImageNodeV2",
+    "inputs": {
+      "prompt": [
+        "7",
+        0
+      ],
+      "model": "gpt-image-2.5-flare",
+      "model.size": "1024x1024",
+      "model.background": "opaque",
+      "model.quality": "low",
+      "n": 1,
+      "seed": 0
+    },
+    "_meta": {
+      "title": "GPT Image 2.5 Flare"
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ],
+      "filename_prefix": "playset/floor"
+    },
+    "_meta": {
+      "title": "OUTPUT image"
+    }
+  }
+}

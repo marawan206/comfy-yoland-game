@@ -1,0 +1,397 @@
+{
+  "story": "The lavender Victorian house where Comfy started. Yoland comes in through the front door into the ochre hallway. The bay-window office is on one side, packed with desks. The kitchen is on the other, where the team eats together. French doors lead out to the deck and the gravel backyard.",
+  "grid": [
+    30,
+    8
+  ],
+  "player_start": [
+    10,
+    2
+  ],
+  "title_card": "victorian_house_facade_5x4",
+  "rooms": [
+    {
+      "id": "office",
+      "rect": [
+        0,
+        0,
+        9,
+        8
+      ],
+      "floor": "floor_dark_hardwood",
+      "wall": "wall_cream_plain"
+    },
+    {
+      "id": "hall",
+      "rect": [
+        9,
+        0,
+        4,
+        8
+      ],
+      "floor": "floor_dark_hardwood",
+      "wall": "wall_ochre_hall"
+    },
+    {
+      "id": "kitchen",
+      "rect": [
+        13,
+        0,
+        9,
+        8
+      ],
+      "floor": "floor_dark_hardwood",
+      "wall": "wall_cream_plain"
+    },
+    {
+      "id": "backyard",
+      "rect": [
+        22,
+        0,
+        8,
+        8
+      ],
+      "floor": "floor_gravel_yard",
+      "wall": "wall_red_brick",
+      "wall_sides": [
+        "north"
+      ]
+    },
+    {
+      "id": "deck",
+      "rect": [
+        22,
+        2,
+        3,
+        4
+      ],
+      "floor": "floor_wood_deck",
+      "wall": "none"
+    }
+  ],
+  "wall_variants": [
+    {
+      "room": "office",
+      "side": "north",
+      "at": 3,
+      "span": 3,
+      "asset": "wall_cream_bay_window"
+    },
+    {
+      "room": "hall",
+      "side": "north",
+      "at": 1,
+      "span": 2,
+      "asset": "wall_ochre_front_door",
+      "note": "level entrance"
+    },
+    {
+      "room": "kitchen",
+      "side": "north",
+      "at": 2,
+      "span": 3,
+      "asset": "wall_cream_kitchen_window"
+    },
+    {
+      "room": "kitchen",
+      "side": "east",
+      "at": 3,
+      "span": 2,
+      "asset": "wall_lavender_french_doors",
+      "note": "kitchen to deck; drawn full height in the cutaway wall"
+    }
+  ],
+  "doorways": [
+    {
+      "room": "hall",
+      "side": "west",
+      "at": 3,
+      "span": 2,
+      "links": "office"
+    },
+    {
+      "room": "kitchen",
+      "side": "west",
+      "at": 3,
+      "span": 2,
+      "links": "hall"
+    }
+  ],
+  "objects": [
+    {
+      "asset": "air_purifier_1x1",
+      "cell": [
+        2,
+        1
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "armchair_lilac_plush_1x1",
+      "cell": [
+        3,
+        1
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "side_table_round_white_1x1",
+      "cell": [
+        4,
+        1
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "armchair_grey_1x1",
+      "cell": [
+        5,
+        1
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "flip": true
+    },
+    {
+      "asset": "plush_duck_yellow_hat_1x1",
+      "cell": [
+        6,
+        0
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "floor_lamp_disc_1x1",
+      "cell": [
+        8,
+        7
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "desk_white_ultrawide_2x1",
+      "cell": [
+        0,
+        3
+      ],
+      "footprint": [
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "aeron_chair_striped_blanket_1x1",
+      "cell": [
+        1,
+        3
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "pc_tower_wood_front_1x1",
+      "cell": [
+        0,
+        5
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "desk_white_standing_2x1",
+      "cells": [
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "footprint": [
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "aeron_chair_1x1",
+      "cells": [
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "flip": true
+    },
+    {
+      "asset": "wall_clock_decal",
+      "wall_of": "hall",
+      "at": 3,
+      "size": 46,
+      "drop": 22
+    },
+    {
+      "asset": "whiteboard_rolling_2x1",
+      "cell": [
+        10,
+        5
+      ],
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "asset": "wire_pantry_shelf_1x1",
+      "cell": [
+        13,
+        0
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "fridge_steel_1x1",
+      "cell": [
+        14,
+        0
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "kitchen_base_cabinets_sink_4x1",
+      "cell": [
+        15,
+        0
+      ],
+      "footprint": [
+        4,
+        1
+      ]
+    },
+    {
+      "asset": "kitchen_range_hood_3x1",
+      "cell": [
+        19,
+        0
+      ],
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "asset": "wall_tv_video_call_decal",
+      "wall_of": "kitchen",
+      "at": 5,
+      "size": 50,
+      "drop": 40
+    },
+    {
+      "asset": "dining_table_black_chairs_3x2",
+      "cell": [
+        15,
+        4
+      ],
+      "footprint": [
+        3,
+        2
+      ]
+    },
+    {
+      "asset": "deck_stairs_planters_4x2",
+      "cell": [
+        25,
+        2
+      ],
+      "footprint": [
+        2,
+        4
+      ],
+      "walkable": true
+    },
+    {
+      "asset": "backyard_tree_2x2",
+      "cell": [
+        27,
+        0
+      ],
+      "footprint": [
+        2,
+        2
+      ]
+    },
+    {
+      "asset": "shrub_round_1x1",
+      "cells": [
+        [
+          22,
+          0
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          24,
+          0
+        ],
+        [
+          29,
+          5
+        ]
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "garden_hose_coil_1x1",
+      "cell": [
+        26,
+        6
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "walkable": true
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "story": "The new high-rise floor. Yoland arrives through the oak doors, crosses the lounge, passes the glass meeting room, and reaches the open desks. Games corner and kitchen are optional stops.",
+  "grid": [
+    28,
+    18
+  ],
+  "player_start": [
+    2,
+    9
+  ],
+  "rooms": [
+    {
+      "id": "entrance",
+      "rect": [
+        0,
+        7,
+        6,
+        5
+      ],
+      "floor": "floor_grey_carpet_tiles",
+      "wall": "wall_white_office"
+    },
+    {
+      "id": "lounge",
+      "rect": [
+        6,
+        0,
+        10,
+        9
+      ],
+      "floor": "floor_oak_planks",
+      "wall": "wall_window_skyline"
+    },
+    {
+      "id": "meeting",
+      "rect": [
+        16,
+        0,
+        6,
+        6
+      ],
+      "floor": "floor_grey_carpet_tiles",
+      "wall": "wall_window_skyline",
+      "note": "south and west edges are glass_partition_panel_1x1 repeated, not solid wall"
+    },
+    {
+      "id": "kitchen",
+      "rect": [
+        22,
+        0,
+        6,
+        6
+      ],
+      "floor": "floor_grey_carpet_tiles",
+      "wall": "wall_white_office"
+    },
+    {
+      "id": "games",
+      "rect": [
+        6,
+        9,
+        10,
+        9
+      ],
+      "floor": "floor_oak_planks",
+      "wall": "wall_white_office"
+    },
+    {
+      "id": "open_desks",
+      "rect": [
+        16,
+        6,
+        12,
+        12
+      ],
+      "floor": "floor_grey_carpet_tiles",
+      "wall": "wall_window_skyline"
+    }
+  ],
+  "objects": [
+    {
+      "asset": "sofa_grey_3x1",
+      "cell": [
+        9,
+        3
+      ],
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "asset": "round_table_red_chairs_2x2",
+      "cell": [
+        13,
+        5
+      ],
+      "footprint": [
+        2,
+        2
+      ]
+    },
+    {
+      "asset": "conference_table_5x2",
+      "cell": [
+        16,
+        2
+      ],
+      "footprint": [
+        5,
+        2
+      ]
+    },
+    {
+      "asset": "kitchen_cabinets_counter_4x1",
+      "cell": [
+        23,
+        0
+      ],
+      "footprint": [
+        4,
+        1
+      ]
+    },
+    {
+      "asset": "fridge_steel_1x1",
+      "cell": [
+        27,
+        0
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "kitchen_island_curved_3x1",
+      "cell": [
+        23,
+        3
+      ],
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "asset": "foosball_table_2x1",
+      "cell": [
+        8,
+        11
+      ],
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "asset": "basketball_arcade_hoop_1x2",
+      "cell": [
+        12,
+        10
+      ],
+      "footprint": [
+        1,
+        2
+      ]
+    },
+    {
+      "asset": "sofa_brown_leather_3x1",
+      "cell": [
+        9,
+        15
+      ],
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "asset": "moving_boxes_stack_1x1",
+      "cell": [
+        13,
+        15
+      ],
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "portrait_painting_decal",
+      "wall_of": "entrance",
+      "side": "north",
+      "at": 4,
+      "note": "hangs on the wall, takes no floor tile"
+    },
+    {
+      "asset": "desk_pod_four_4x2",
+      "cells": [
+        [
+          17,
+          8
+        ],
+        [
+          23,
+          8
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          23,
+          13
+        ]
+      ],
+      "footprint": [
+        4,
+        2
+      ]
+    },
+    {
+      "asset": "desk_sitstand_dual_monitor_2x1",
+      "cell": [
+        20,
+        16
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "note": "Yoland's desk, the goal tile is in front of it"
+    },
+    {
+      "asset": "walking_pad_treadmill_1x2",
+      "cells": [
+        [
+          21,
+          10
+        ],
+        [
+          22,
+          15
+        ]
+      ],
+      "footprint": [
+        1,
+        2
+      ],
+      "walkable": true
+    },
+    {
+      "asset": "aeron_chair_1x1",
+      "cells": [
+        [
+          17,
+          7
+        ],
+        [
+          19,
+          7
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          19,
+          12
+        ],
+        [
+          23,
+          12
+        ],
+        [
+          25,
+          12
+        ]
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "note": "north side of each pod, facing the desk"
+    },
+    {
+      "asset": "aeron_chair_back_1x1",
+      "cells": [
+        [
+          17,
+          10
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          23,
+          10
+        ],
+        [
+          25,
+          10
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          19,
+          15
+        ],
+        [
+          23,
+          15
+        ],
+        [
+          25,
+          15
+        ]
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "flip": true,
+      "note": "south side of each pod, seen from behind"
+    },
+    {
+      "asset": "aeron_chair_back_1x1",
+      "cell": [
+        20,
+        17
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "flip": true,
+      "note": "Yoland's chair"
+    }
+  ],
+  "wall_variants": [
+    {
+      "room": "entrance",
+      "side": "west",
+      "at": 1,
+      "span": 2,
+      "asset": "wall_white_oak_doors"
+    }
+  ],
+  "wall_overrides": [
+    {
+      "room": "meeting",
+      "side": "west",
+      "at": 0,
+      "span": 6,
+      "kind": "glass",
+      "asset": "wall_glass_partition"
+    },
+    {
+      "room": "open_desks",
+      "side": "north",
+      "at": 0,
+      "span": 6,
+      "kind": "glass",
+      "asset": "wall_glass_partition"
+    }
+  ],
+  "doorways": [
+    {
+      "room": "lounge",
+      "side": "west",
+      "at": 7,
+      "span": 2,
+      "links": "entrance"
+    },
+    {
+      "room": "games",
+      "side": "west",
+      "at": 1,
+      "span": 2,
+      "links": "entrance"
+    },
+    {
+      "room": "games",
+      "side": "north",
+      "at": 4,
+      "span": 2,
+      "links": "lounge"
+    },
+    {
+      "room": "open_desks",
+      "side": "west",
+      "at": 1,
+      "span": 2,
+      "links": "lounge"
+    },
+    {
+      "room": "open_desks",
+      "side": "west",
+      "at": 8,
+      "span": 2,
+      "links": "games"
+    },
+    {
+      "room": "open_desks",
+      "side": "north",
+      "at": 3,
+      "span": 1,
+      "links": "meeting",
+      "note": "gap in the glass wall"
+    },
+    {
+      "room": "open_desks",
+      "side": "north",
+      "at": 8,
+      "span": 2,
+      "links": "kitchen"
+    },
+    {
+      "room": "meeting",
+      "side": "west",
+      "at": 2,
+      "span": 1,
+      "links": "lounge",
+      "note": "gap in the glass wall"
+    }
+  ]
+}

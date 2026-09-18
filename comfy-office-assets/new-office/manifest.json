@@ -1,0 +1,253 @@
+{
+ "office": "new-office",
+ "tile_px": [
+  128,
+  64
+ ],
+ "projection": "2:1 isometric",
+ "count": 24,
+ "assets": [
+  {
+   "name": "aeron_chair_1x1",
+   "type": "props",
+   "file": "props/aeron_chair_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 1.35,
+   "prompt_description": "a black mesh ergonomic office chair on a five-star wheeled base with armrests. Footprint 1 by 1 tile."
+  },
+  {
+   "name": "aeron_chair_back_1x1",
+   "type": "props",
+   "file": "props/aeron_chair_back_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 1.35
+  },
+  {
+   "name": "basketball_arcade_hoop_1x2",
+   "type": "props",
+   "file": "props/basketball_arcade_hoop_1x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    2
+   ],
+   "height_tiles": 2.4,
+   "prompt_description": "a fold-out indoor basketball arcade game with a black frame, netting, two hoops with orange rims on a backboard and a small scoreboard with no digits. Footprint 1 by 2 tiles, about two tiles tall."
+  },
+  {
+   "name": "conference_table_5x2",
+   "type": "props",
+   "file": "props/conference_table_5x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    5,
+    2
+   ],
+   "height_tiles": 1.3,
+   "prompt_description": "a long white conference table with ten white wheeled chairs around it and a speakerphone in the middle. Footprint 5 by 2 tiles."
+  },
+  {
+   "name": "desk_pod_four_4x2",
+   "type": "props",
+   "file": "props/desk_pod_four_4x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    4,
+    2
+   ],
+   "height_tiles": 1.7,
+   "prompt_description": "a pod of four light oak sit-stand desks with black legs pushed together in a 2 by 2 block, each with a monitor and keyboard, cables tidy. Footprint 4 by 2 tiles."
+  },
+  {
+   "name": "desk_sitstand_dual_monitor_2x1",
+   "type": "props",
+   "file": "props/desk_sitstand_dual_monitor_2x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "height_tiles": 1.7,
+   "prompt_description": "a sit-stand office desk with a light oak top and black metal legs, two black monitors on arms, a keyboard and a mug. Footprint 2 by 1 tiles."
+  },
+  {
+   "name": "floor_grey_carpet_tiles",
+   "type": "floors",
+   "file": "floors/floor_grey_carpet_tiles.png",
+   "used_in_level": true,
+   "prompt_description": "grey woven office carpet tiles with a fine crosshatch weave in light and mid grey."
+  },
+  {
+   "name": "floor_oak_planks",
+   "type": "floors",
+   "file": "floors/floor_oak_planks.png",
+   "used_in_level": true,
+   "prompt_description": "light natural oak plank flooring, long boards running one way, subtle grain."
+  },
+  {
+   "name": "foosball_table_2x1",
+   "type": "props",
+   "file": "props/foosball_table_2x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "height_tiles": 1.15,
+   "prompt_description": "a wooden foosball table with silver rods, red and blue players and black handles. Footprint 2 by 1 tiles."
+  },
+  {
+   "name": "fridge_steel_1x1",
+   "type": "props",
+   "file": "props/fridge_steel_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 2.2,
+   "prompt_description": "a tall stainless steel double-door refrigerator. Footprint 1 by 1 tile, two tiles tall."
+  },
+  {
+   "name": "glass_partition_panel_1x1",
+   "type": "superseded",
+   "file": "_superseded/glass_partition_panel_1x1.png",
+   "used_in_level": false,
+   "prompt_description": "one tall floor-to-ceiling glass office partition panel with a thin black metal frame, glass drawn pale blue and see-through with two diagonal highlight streaks. One tile wide and three tiles tall.",
+   "superseded_because": "thin slat prop; replaced by the wall texture wall_glass_partition"
+  },
+  {
+   "name": "kitchen_cabinets_counter_4x1",
+   "type": "props",
+   "file": "props/kitchen_cabinets_counter_4x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    4,
+    1
+   ],
+   "height_tiles": 2.5,
+   "prompt_description": "a run of light wood kitchen cabinets with upper cupboards, a white counter, a coffee machine, a microwave and a sink. Footprint 4 by 1 tiles, two tiles tall."
+  },
+  {
+   "name": "kitchen_island_curved_3x1",
+   "type": "props",
+   "file": "props/kitchen_island_curved_3x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    3,
+    1
+   ],
+   "height_tiles": 1.35,
+   "prompt_description": "a kitchen island with one rounded end, light wood slatted base and white marble top, with a fruit bowl and snack boxes on it. Footprint 3 by 1 tiles."
+  },
+  {
+   "name": "moving_boxes_stack_1x1",
+   "type": "props",
+   "file": "props/moving_boxes_stack_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 1.3,
+   "prompt_description": "a small stack of three cardboard moving boxes, the top one open with packing paper showing. Footprint 1 by 1 tile."
+  },
+  {
+   "name": "oak_double_doors_2x1",
+   "type": "superseded",
+   "file": "_superseded/oak_double_doors_2x1.png",
+   "used_in_level": false,
+   "prompt_description": "a pair of light oak office entrance doors with tall glass panels and steel handles, set in a white door frame, one door slightly open. Two tiles wide, three tiles tall.",
+   "superseded_because": "free-standing prop; replaced by the wall opening wall_white_oak_doors"
+  },
+  {
+   "name": "portrait_painting_decal",
+   "type": "decals",
+   "file": "decals/portrait_painting_decal.png",
+   "used_in_level": true,
+   "prompt_description": "a classical oil portrait painting of a distinguished gentleman in a dark coat, in an ornate gold frame."
+  },
+  {
+   "name": "round_table_red_chairs_2x2",
+   "type": "props",
+   "file": "props/round_table_red_chairs_2x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    2,
+    2
+   ],
+   "height_tiles": 1.3,
+   "prompt_description": "a round white cafe table with three wheeled office chairs that have red seats and white backs. Footprint 2 by 2 tiles."
+  },
+  {
+   "name": "sofa_brown_leather_3x1",
+   "type": "props",
+   "file": "props/sofa_brown_leather_3x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    3,
+    1
+   ],
+   "height_tiles": 1.0,
+   "prompt_description": "a tan brown leather three-seater sofa with a patterned throw cushion. Footprint 3 by 1 tiles."
+  },
+  {
+   "name": "sofa_grey_3x1",
+   "type": "props",
+   "file": "props/sofa_grey_3x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    3,
+    1
+   ],
+   "height_tiles": 1.0,
+   "prompt_description": "a boxy light grey fabric three-seater sofa with thin legs. Footprint 3 by 1 tiles."
+  },
+  {
+   "name": "walking_pad_treadmill_1x2",
+   "type": "props",
+   "file": "props/walking_pad_treadmill_1x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    2
+   ],
+   "height_tiles": 0.25,
+   "prompt_description": "a flat black under-desk walking pad treadmill with a thin red stripe, very low to the ground, no handrails. Footprint 1 by 2 tiles."
+  },
+  {
+   "name": "wall_glass_partition",
+   "type": "walls",
+   "file": "walls/wall_glass_partition.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_white_oak_doors",
+   "type": "wall_openings",
+   "file": "wall_openings/wall_white_oak_doors.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_white_office",
+   "type": "walls",
+   "file": "walls/wall_white_office.png",
+   "used_in_level": true,
+   "prompt_description": "clean white painted office wall with a low white baseboard along the very bottom edge."
+  },
+  {
+   "name": "wall_window_skyline",
+   "type": "walls",
+   "file": "walls/wall_window_skyline.png",
+   "used_in_level": true,
+   "prompt_description": "floor-to-ceiling office window with a thin dark frame, looking out at a daytime San Francisco high-rise skyline, a dark roller blind rolled up at the top."
+  }
+ ]
+}

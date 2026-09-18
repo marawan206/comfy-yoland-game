@@ -1,0 +1,16 @@
+{
+  "_about": "Comfy Cloud workflow ids for the five packaged workflows, saved on the account this session was connected to. Open one at https://cloud.comfy.org/#<id> when signed into that account. If that is not the team account, import the api.json files instead.",
+  "inputs": {
+    "asset": "node 1, value",
+    "style": "node 2, value",
+    "world": "node 3, value"
+  },
+  "output_node": "9",
+  "workflows": {
+    "playset_prop": "56e978af-c26c-46fb-a01c-c5f6f6b25263",
+    "playset_floor": "5ca5f7fc-ccd5-4bbb-88e4-74df14a399fd",
+    "playset_wall": "4b302ec6-44b9-4d21-bc25-84844e3b0973",
+    "playset_wall_opening": "4182ef09-3c2a-4cba-8a4f-2fe6ae13cdcb",
+    "playset_decal": "6e185efb-a3ca-4d86-9364-e014c7293d8e"
+  }
+}

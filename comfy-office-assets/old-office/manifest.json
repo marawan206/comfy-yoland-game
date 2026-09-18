@@ -1,0 +1,378 @@
+{
+ "office": "old-office",
+ "tile_px": [
+  128,
+  64
+ ],
+ "projection": "2:1 isometric",
+ "count": 40,
+ "assets": [
+  {
+   "name": "aeron_chair_1x1",
+   "type": "props",
+   "file": "props/aeron_chair_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 1.35,
+   "prompt_description": "a black mesh ergonomic office chair on a five-star wheeled base with armrests. Footprint 1 by 1 tile.",
+   "shared_from": "the other office kit"
+  },
+  {
+   "name": "aeron_chair_striped_blanket_1x1",
+   "type": "props",
+   "file": "props/aeron_chair_striped_blanket_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 1.35
+  },
+  {
+   "name": "air_purifier_1x1",
+   "type": "props",
+   "file": "props/air_purifier_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 0.95
+  },
+  {
+   "name": "armchair_grey_1x1",
+   "type": "props",
+   "file": "props/armchair_grey_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 0.95
+  },
+  {
+   "name": "armchair_lilac_plush_1x1",
+   "type": "props",
+   "file": "props/armchair_lilac_plush_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 1.1,
+   "prompt_description": "a small lilac tufted armchair with a cute round penguin plush toy sitting on it. Footprint 1 by 1 tile."
+  },
+  {
+   "name": "backyard_tree_2x2",
+   "type": "props",
+   "file": "props/backyard_tree_2x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    2,
+    2
+   ],
+   "height_tiles": 4.6,
+   "prompt_description": "a slender multi-trunk garden tree with smooth pale bark and a light airy canopy of small green and reddish leaves. Footprint 2 by 2 tiles, four tiles tall."
+  },
+  {
+   "name": "bay_window_white_trim_3x1",
+   "type": "superseded",
+   "file": "_superseded/bay_window_white_trim_3x1.png",
+   "used_in_level": false,
+   "prompt_description": "an interior Victorian bay window unit: three tall sash windows with thick white trim and white zebra roller blinds half down, cream wall around them. Three tiles wide, three tiles tall.",
+   "superseded_because": "free-standing prop; replaced by the wall opening wall_cream_bay_window"
+  },
+  {
+   "name": "deck_stairs_planters_4x2",
+   "type": "props",
+   "file": "props/deck_stairs_planters_4x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    4,
+    2
+   ],
+   "height_tiles": 1.5,
+   "prompt_description": "wide weathered wooden deck steps with a wooden handrail, flanked by tall black square planters with round boxwood shrubs. Footprint 4 by 2 tiles."
+  },
+  {
+   "name": "desk_white_standing_2x1",
+   "type": "props",
+   "file": "props/desk_white_standing_2x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "height_tiles": 1.7,
+   "prompt_description": "a white sit-stand desk with white legs, one widescreen monitor on a riser, a keyboard, headphones and a tissue box. Footprint 2 by 1 tiles."
+  },
+  {
+   "name": "desk_white_ultrawide_2x1",
+   "type": "props",
+   "file": "props/desk_white_ultrawide_2x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "height_tiles": 1.7
+  },
+  {
+   "name": "dining_table_black_chairs_3x2",
+   "type": "props",
+   "file": "props/dining_table_black_chairs_3x2.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    3,
+    2
+   ],
+   "height_tiles": 1.35,
+   "prompt_description": "a dark walnut dining table on black metal legs with six black high-backed chairs, a bowl of oranges and some snacks on top. Footprint 3 by 2 tiles."
+  },
+  {
+   "name": "floor_dark_hardwood",
+   "type": "floors",
+   "file": "floors/floor_dark_hardwood.png",
+   "used_in_level": true,
+   "prompt_description": "dark reddish-brown old hardwood flooring, narrow boards running one way, worn and glossy."
+  },
+  {
+   "name": "floor_gravel_yard",
+   "type": "floors",
+   "file": "floors/floor_gravel_yard.png",
+   "used_in_level": true,
+   "prompt_description": "pale beige pea gravel garden ground with tiny stones."
+  },
+  {
+   "name": "floor_lamp_disc_1x1",
+   "type": "props",
+   "file": "props/floor_lamp_disc_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 2.5
+  },
+  {
+   "name": "floor_sidewalk",
+   "type": "floors",
+   "file": "floors/floor_sidewalk.png",
+   "used_in_level": false
+  },
+  {
+   "name": "floor_wood_deck",
+   "type": "floors",
+   "file": "floors/floor_wood_deck.png",
+   "used_in_level": true,
+   "prompt_description": "weathered grey-brown wooden deck boards running one way with thin gaps."
+  },
+  {
+   "name": "french_doors_chandelier_2x1",
+   "type": "superseded",
+   "file": "_superseded/french_doors_chandelier_2x1.png",
+   "used_in_level": false,
+   "prompt_description": "white French double doors standing open in a lavender clapboard wall, with a glowing crystal chandelier visible inside. Two tiles wide, three tiles tall.",
+   "superseded_because": "free-standing prop; replaced by the wall opening wall_lavender_french_doors"
+  },
+  {
+   "name": "fridge_steel_1x1",
+   "type": "props",
+   "file": "props/fridge_steel_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 2.2,
+   "prompt_description": "a tall stainless steel double-door refrigerator. Footprint 1 by 1 tile, two tiles tall.",
+   "shared_from": "the other office kit"
+  },
+  {
+   "name": "garden_hose_coil_1x1",
+   "type": "props",
+   "file": "props/garden_hose_coil_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 0.2
+  },
+  {
+   "name": "kitchen_base_cabinets_sink_4x1",
+   "type": "props",
+   "file": "props/kitchen_base_cabinets_sink_4x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    4,
+    1
+   ],
+   "height_tiles": 1.3
+  },
+  {
+   "name": "kitchen_range_hood_3x1",
+   "type": "props",
+   "file": "props/kitchen_range_hood_3x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    3,
+    1
+   ],
+   "height_tiles": 2.6,
+   "prompt_description": "a kitchen cooking wall: white shaker cabinets, a gas stove, a stainless steel chimney range hood and white subway tiles behind it. Footprint 3 by 1 tiles, three tiles tall."
+  },
+  {
+   "name": "pc_tower_wood_front_1x1",
+   "type": "props",
+   "file": "props/pc_tower_wood_front_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 0.7
+  },
+  {
+   "name": "plush_duck_yellow_hat_1x1",
+   "type": "props",
+   "file": "props/plush_duck_yellow_hat_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 0.8
+  },
+  {
+   "name": "shrub_round_1x1",
+   "type": "props",
+   "file": "props/shrub_round_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 0.9
+  },
+  {
+   "name": "side_table_round_white_1x1",
+   "type": "props",
+   "file": "props/side_table_round_white_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 0.6
+  },
+  {
+   "name": "victorian_house_facade_5x4",
+   "type": "title_card",
+   "file": "title_card/victorian_house_facade_5x4.png",
+   "used_in_level": false,
+   "prompt_description": "the street front of a narrow two-storey San Francisco Victorian house painted lavender purple with ornate white trim, a tall bay window with white blinds, a steep front staircase with a white turned balustrade leading to a dark front door, a lavender panelled garage door at street level and spiky potted plants by the steps. Footprint 5 by 4 tiles."
+  },
+  {
+   "name": "wall_clock_decal",
+   "type": "decals",
+   "file": "decals/wall_clock_decal.png",
+   "used_in_level": true,
+   "prompt_description": "a round black-rimmed kitchen wall clock with a white face, simple hour marks and black hands, no numerals."
+  },
+  {
+   "name": "wall_cream_bay_window",
+   "type": "wall_openings",
+   "file": "wall_openings/wall_cream_bay_window.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_cream_doorway",
+   "type": "wall_openings",
+   "file": "wall_openings/wall_cream_doorway.png",
+   "used_in_level": false
+  },
+  {
+   "name": "wall_cream_kitchen_window",
+   "type": "wall_openings",
+   "file": "wall_openings/wall_cream_kitchen_window.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_cream_plain",
+   "type": "walls",
+   "file": "walls/wall_cream_plain.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_cream_victorian",
+   "type": "superseded",
+   "file": "_superseded/wall_cream_victorian.png",
+   "used_in_level": false,
+   "prompt_description": "warm cream painted Victorian interior wall with a tall white baseboard along the very bottom edge.",
+   "superseded_because": "came back as floral wallpaper; replaced by wall_cream_plain"
+  },
+  {
+   "name": "wall_lavender_french_doors",
+   "type": "wall_openings",
+   "file": "wall_openings/wall_lavender_french_doors.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_lavender_siding",
+   "type": "walls",
+   "file": "walls/wall_lavender_siding.png",
+   "used_in_level": false,
+   "prompt_description": "lavender purple painted horizontal wooden clapboard house siding."
+  },
+  {
+   "name": "wall_ochre_front_door",
+   "type": "wall_openings",
+   "file": "wall_openings/wall_ochre_front_door.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_ochre_hall",
+   "type": "walls",
+   "file": "walls/wall_ochre_hall.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_red_brick",
+   "type": "walls",
+   "file": "walls/wall_red_brick.png",
+   "used_in_level": true
+  },
+  {
+   "name": "wall_tv_video_call_decal",
+   "type": "decals",
+   "file": "decals/wall_tv_video_call_decal.png",
+   "used_in_level": true
+  },
+  {
+   "name": "whiteboard_rolling_2x1",
+   "type": "props",
+   "file": "props/whiteboard_rolling_2x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "height_tiles": 2.1
+  },
+  {
+   "name": "wire_pantry_shelf_1x1",
+   "type": "props",
+   "file": "props/wire_pantry_shelf_1x1.png",
+   "used_in_level": true,
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "height_tiles": 2.2
+  }
+ ]
+}

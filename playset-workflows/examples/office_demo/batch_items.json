@@ -1,0 +1,578 @@
+[
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_floor_oak_planks",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/floor_oak_planks"
+   },
+   "271": {
+    "prompt": "ASSET: light natural oak plank flooring, long boards running one way, subtle grain.\n\nRULES: a seamless tileable floor texture viewed perfectly straight down, orthographic, flat, no perspective. Small to medium evenly scattered detail, nothing large cut by an edge. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats on all four sides. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_floor_grey_carpet_tiles",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/floor_grey_carpet_tiles"
+   },
+   "271": {
+    "prompt": "ASSET: grey woven office carpet tiles with a fine crosshatch weave in light and mid grey.\n\nRULES: a seamless tileable floor texture viewed perfectly straight down, orthographic, flat, no perspective. Small to medium evenly scattered detail, nothing large cut by an edge. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats on all four sides. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_wall_white_office",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/wall_white_office"
+   },
+   "271": {
+    "prompt": "ASSET: clean white painted office wall with a low white baseboard along the very bottom edge.\n\nRULES: a seamless tileable wall texture viewed perfectly front-on, orthographic elevation, flat, no perspective, no floor or ceiling visible. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats left to right. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_wall_window_skyline",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/wall_window_skyline"
+   },
+   "271": {
+    "prompt": "ASSET: floor-to-ceiling office window with a thin dark frame, looking out at a daytime San Francisco high-rise skyline, a dark roller blind rolled up at the top.\n\nRULES: a seamless tileable wall texture viewed perfectly front-on, orthographic elevation, flat, no perspective, no floor or ceiling visible. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats left to right. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_desk_sitstand_dual_monitor_2x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/desk_sitstand_dual_monitor_2x1"
+   },
+   "271": {
+    "prompt": "ASSET: a sit-stand office desk with a light oak top and black metal legs, two black monitors on arms, a keyboard and a mug. Footprint 2 by 1 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_desk_pod_four_4x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/desk_pod_four_4x2"
+   },
+   "271": {
+    "prompt": "ASSET: a pod of four light oak sit-stand desks with black legs pushed together in a 2 by 2 block, each with a monitor and keyboard, cables tidy. Footprint 4 by 2 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_aeron_chair_1x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/aeron_chair_1x1"
+   },
+   "271": {
+    "prompt": "ASSET: a black mesh ergonomic office chair on a five-star wheeled base with armrests. Footprint 1 by 1 tile.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_walking_pad_treadmill_1x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/walking_pad_treadmill_1x2"
+   },
+   "271": {
+    "prompt": "ASSET: a flat black under-desk walking pad treadmill with a thin red stripe, very low to the ground, no handrails. Footprint 1 by 2 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_sofa_grey_3x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/sofa_grey_3x1"
+   },
+   "271": {
+    "prompt": "ASSET: a boxy light grey fabric three-seater sofa with thin legs. Footprint 3 by 1 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_sofa_brown_leather_3x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/sofa_brown_leather_3x1"
+   },
+   "271": {
+    "prompt": "ASSET: a tan brown leather three-seater sofa with a patterned throw cushion. Footprint 3 by 1 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_round_table_red_chairs_2x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/round_table_red_chairs_2x2"
+   },
+   "271": {
+    "prompt": "ASSET: a round white cafe table with three wheeled office chairs that have red seats and white backs. Footprint 2 by 2 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_conference_table_5x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/conference_table_5x2"
+   },
+   "271": {
+    "prompt": "ASSET: a long white conference table with ten white wheeled chairs around it and a speakerphone in the middle. Footprint 5 by 2 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_glass_partition_panel_1x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/glass_partition_panel_1x1"
+   },
+   "271": {
+    "prompt": "ASSET: one tall floor-to-ceiling glass office partition panel with a thin black metal frame, glass drawn pale blue and see-through with two diagonal highlight streaks. One tile wide and three tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_foosball_table_2x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/foosball_table_2x1"
+   },
+   "271": {
+    "prompt": "ASSET: a wooden foosball table with silver rods, red and blue players and black handles. Footprint 2 by 1 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_basketball_arcade_hoop_1x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/basketball_arcade_hoop_1x2"
+   },
+   "271": {
+    "prompt": "ASSET: a fold-out indoor basketball arcade game with a black frame, netting, two hoops with orange rims on a backboard and a small scoreboard with no digits. Footprint 1 by 2 tiles, about two tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_kitchen_island_curved_3x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/kitchen_island_curved_3x1"
+   },
+   "271": {
+    "prompt": "ASSET: a kitchen island with one rounded end, light wood slatted base and white marble top, with a fruit bowl and snack boxes on it. Footprint 3 by 1 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_kitchen_cabinets_counter_4x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/kitchen_cabinets_counter_4x1"
+   },
+   "271": {
+    "prompt": "ASSET: a run of light wood kitchen cabinets with upper cupboards, a white counter, a coffee machine, a microwave and a sink. Footprint 4 by 1 tiles, two tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_fridge_steel_1x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/fridge_steel_1x1"
+   },
+   "271": {
+    "prompt": "ASSET: a tall stainless steel double-door refrigerator. Footprint 1 by 1 tile, two tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_oak_double_doors_2x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/oak_double_doors_2x1"
+   },
+   "271": {
+    "prompt": "ASSET: a pair of light oak office entrance doors with tall glass panels and steel handles, set in a white door frame, one door slightly open. Two tiles wide, three tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_moving_boxes_stack_1x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/moving_boxes_stack_1x1"
+   },
+   "271": {
+    "prompt": "ASSET: a small stack of three cardboard moving boxes, the top one open with packing paper showing. Footprint 1 by 1 tile.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "new_portrait_painting_decal",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_new/portrait_painting_decal"
+   },
+   "271": {
+    "prompt": "ASSET: a classical oil portrait painting of a distinguished gentleman in a dark coat, in an ornate gold frame.\n\nRULES: one flat wall-mounted object viewed perfectly front-on, orthographic, centred with empty margin all round. Transparent background. No wall behind it, no cast shadow, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_floor_dark_hardwood",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/floor_dark_hardwood"
+   },
+   "271": {
+    "prompt": "ASSET: dark reddish-brown old hardwood flooring, narrow boards running one way, worn and glossy.\n\nRULES: a seamless tileable floor texture viewed perfectly straight down, orthographic, flat, no perspective. Small to medium evenly scattered detail, nothing large cut by an edge. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats on all four sides. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_floor_gravel_yard",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/floor_gravel_yard"
+   },
+   "271": {
+    "prompt": "ASSET: pale beige pea gravel garden ground with tiny stones.\n\nRULES: a seamless tileable floor texture viewed perfectly straight down, orthographic, flat, no perspective. Small to medium evenly scattered detail, nothing large cut by an edge. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats on all four sides. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_floor_wood_deck",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/floor_wood_deck"
+   },
+   "271": {
+    "prompt": "ASSET: weathered grey-brown wooden deck boards running one way with thin gaps.\n\nRULES: a seamless tileable floor texture viewed perfectly straight down, orthographic, flat, no perspective. Small to medium evenly scattered detail, nothing large cut by an edge. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats on all four sides. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_wall_cream_victorian",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/wall_cream_victorian"
+   },
+   "271": {
+    "prompt": "ASSET: warm cream painted Victorian interior wall with a tall white baseboard along the very bottom edge.\n\nRULES: a seamless tileable wall texture viewed perfectly front-on, orthographic elevation, flat, no perspective, no floor or ceiling visible. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats left to right. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_wall_lavender_siding",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/wall_lavender_siding"
+   },
+   "271": {
+    "prompt": "ASSET: lavender purple painted horizontal wooden clapboard house siding.\n\nRULES: a seamless tileable wall texture viewed perfectly front-on, orthographic elevation, flat, no perspective, no floor or ceiling visible. Flat even colour: no gradients, no lighting, identical brightness in every corner and along every edge. Fills the frame edge to edge and repeats left to right. No objects, no shadows, no border, no text.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "opaque",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_victorian_house_facade_5x4",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/victorian_house_facade_5x4"
+   },
+   "271": {
+    "prompt": "ASSET: the street front of a narrow two-storey San Francisco Victorian house painted lavender purple with ornate white trim, a tall bay window with white blinds, a steep front staircase with a white turned balustrade leading to a dark front door, a lavender panelled garage door at street level and spiky potted plants by the steps. Footprint 5 by 4 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_bay_window_white_trim_3x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/bay_window_white_trim_3x1"
+   },
+   "271": {
+    "prompt": "ASSET: an interior Victorian bay window unit: three tall sash windows with thick white trim and white zebra roller blinds half down, cream wall around them. Three tiles wide, three tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_desk_white_standing_2x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/desk_white_standing_2x1"
+   },
+   "271": {
+    "prompt": "ASSET: a white sit-stand desk with white legs, one widescreen monitor on a riser, a keyboard, headphones and a tissue box. Footprint 2 by 1 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_armchair_lilac_plush_1x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/armchair_lilac_plush_1x1"
+   },
+   "271": {
+    "prompt": "ASSET: a small lilac tufted armchair with a cute round penguin plush toy sitting on it. Footprint 1 by 1 tile.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_dining_table_black_chairs_3x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/dining_table_black_chairs_3x2"
+   },
+   "271": {
+    "prompt": "ASSET: a dark walnut dining table on black metal legs with six black high-backed chairs, a bowl of oranges and some snacks on top. Footprint 3 by 2 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_kitchen_range_hood_3x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/kitchen_range_hood_3x1"
+   },
+   "271": {
+    "prompt": "ASSET: a kitchen cooking wall: white shaker cabinets, a gas stove, a stainless steel chimney range hood and white subway tiles behind it. Footprint 3 by 1 tiles, three tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_deck_stairs_planters_4x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/deck_stairs_planters_4x2"
+   },
+   "271": {
+    "prompt": "ASSET: wide weathered wooden deck steps with a wooden handrail, flanked by tall black square planters with round boxwood shrubs. Footprint 4 by 2 tiles.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_french_doors_chandelier_2x1",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/french_doors_chandelier_2x1"
+   },
+   "271": {
+    "prompt": "ASSET: white French double doors standing open in a lavender clapboard wall, with a glowing crystal chandelier visible inside. Two tiles wide, three tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_backyard_tree_2x2",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/backyard_tree_2x2"
+   },
+   "271": {
+    "prompt": "ASSET: a slender multi-trunk garden tree with smooth pale bark and a light airy canopy of small green and reddish leaves. Footprint 2 by 2 tiles, four tiles tall.\n\nRULES: one game prop sprite for a 2D isometric game in 2:1 game projection: ground edges rise 1 pixel for every 2 across (about 26.6 degrees, not 30), vertical edges stay vertical, parallel lines stay parallel, no perspective. The front faces the lower-right of the image. Whole object visible, centred, empty margin all round. Lit from the top-left. Transparent background. No floor, no ground patch, no cast shadow, no people, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1536",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ },
+ {
+  "tool": "run_template",
+  "name": "api_openai_gpt_image_25_flare_t2i",
+  "description": "old_wall_clock_decal",
+  "input_overrides": {
+   "269": {
+    "filename_prefix": "office_old/wall_clock_decal"
+   },
+   "271": {
+    "prompt": "ASSET: a round black-rimmed kitchen wall clock with a white face, simple hour marks and black hands, no numerals.\n\nRULES: one flat wall-mounted object viewed perfectly front-on, orthographic, centred with empty margin all round. Transparent background. No wall behind it, no cast shadow, no text or lettering.\n\nART STYLE: detailed 16-bit pixel art for a cozy isometric office sim. Crisp square pixels, dark outlines, soft cel shading with light dithering, slightly chunky proportions, warm natural colours. No blur, no smooth gradients.",
+    "model.size": "1024x1024",
+    "model.background": "transparent",
+    "model.quality": "low"
+   }
+  }
+ }
+]
