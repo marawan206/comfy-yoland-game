@@ -91,21 +91,17 @@ const SCRIPT = {
       { id: 'yard', asset: 'backyard_tree_2x2', label: 'The backyard', lines: [
         L(Y, 'The gravel yard. Where we took calls whenever the office Wi-Fi was more of a suggestion.') ] },
       { id: 'door', cells: [[10, 0], [11, 0], [10, 1], [11, 1]], label: 'Front door', exit: true, lines: [
-        L(NA, '*knock knock knock*', 'knock'),
-        L(D, 'Yoland? ...It’s Deep. I’m outside.'),
-        L(Y, 'Deep. It’s moving day. Why are you outside?'),
-        L(D, 'I went to get the boxes. The door closed behind me.'),
-        L(Y, 'The door has one lock, Deep. One.'),
-        L(D, 'And it has defeated me. Again.'),
-        L(Y, 'Fourth time this month.'),
-        L(D, 'Fifth. You weren’t here for Tuesday.'),
-        L(NA, 'Yoland lets Deep in. Again.', 'door') ],
+        L(Y, 'The front door. The one that locked Deep, Jedrzej and Purz outside the night they went out for booze.'),
+        L(Y, 'Deep tried opening it. Then tried again. Then tried a few more times, with feeling.', 'knock'),
+        L(Y, 'Then all three of them tried the window. The window won.'),
+        L(Y, 'And then, for no reason anyone has ever explained, the garage door opened.', 'door'),
+        L(Y, 'Nobody asks how. We just say thank you to the garage.') ],
         notYet: [L(Y, 'I still have a few things to say goodbye to before we go.')],
         finale: [
-          L(Y, 'That’s everything. Boxes are in the van. Duck is in my backpack.'),
+          L(Y, 'That�s everything. Boxes are in the van. Duck is in my backpack.'),
           L(Y, 'Goodbye, Victorian. You were a weird office and a great home.'),
-          L(D, 'Wait. Did anyone grab the whiteboard?'),
-          L(Y, '...Deep.') ] },
+          L(D, 'Garage door�s open, by the way. Still don�t know why.'),
+          L(Y, 'Don�t question it. Let�s go.') ] },
     ],
   },
   new: {
@@ -119,14 +115,12 @@ const SCRIPT = {
     hotspots: [
       { id: 'doors', cells: [[0, 8], [0, 9], [1, 8], [1, 9]], label: 'The oak doors', lines: [
         L(D, 'Yoland! Have you SEEN this? Key cards. Badge readers. A front desk with an actual human.'),
-        L(D, 'For the first time in Comfy Org history, I physically cannot lock myself out.'),
-        L(Y, 'You say that like it’s a challenge.'),
-        L(D, 'It’s not a challenge. It’s a guarantee. The building has security now. I am secure.'),
-        L(Y, 'Deep. Where is your badge?'),
+        L(D, 'Nobody is getting locked out of this one. Not me. Not Jedrzej. Not Purz.'),
+        L(Y, 'Even on a booze run?'),
+        L(D, 'ESPECIALLY on a booze run. The badge goes in the pocket. The pocket comes with me.'),
+        L(Y, 'And if the badge stays in the old office?'),
         L(D, '...'),
-        L(D, 'It’s in the old office.'),
-        L(Y, 'Which we no longer have keys to.'),
-        L(D, 'The system works, Yoland. It’s very secure.', 'confirm') ] },
+        L(D, 'Then I would like to formally request that this building also have a garage door.', 'confirm') ] },
       { id: 'portrait', asset: 'portrait_painting_decal', cells: [[3, 7], [4, 7], [5, 7]], label: 'The portrait', lines: [
         L(Y, 'A portrait of a stern man in a suit. He came with the office.'),
         L(Y, 'Nobody knows who he is. The team has named him Legacy Node.'),
@@ -148,9 +142,9 @@ const SCRIPT = {
       { id: 'desk', asset: 'desk_sitstand_dual_monitor_2x1', label: 'Yoland’s desk', final: true, lines: [
         L(Y, 'My desk. Two monitors, a sit-stand, a view of the bay.'),
         L(Y, 'Same job as in the Victorian: make ComfyUI the best place to build with generative AI.'),
-        L(Y, 'Just with more floors. And a door Deep can’t lock himself out of.'),
-        L(D, '*muffled, from the hallway*\nYOLAND. THE BADGE READER WON’T READ MY FACE.'),
-        L(Y, 'It’s a badge reader, Deep.'),
+        L(Y, 'Just with more floors. And a door that locks the right way.'),
+        L(D, '*from the doorway* Badge works. Door opens. Just testing. Every day. Forever.'),
+        L(Y, 'Good.'),
         L(NA, 'Comfy Org. 201 Spear Street, Suite 1700, San Francisco.'),
         L(NA, 'New office. Same team. Same duck.', 'jingle') ],
         notYet: [L(Y, 'I should check in at the oak doors first. Deep is waving at me.')] },
@@ -212,12 +206,13 @@ function tryMove(dc, dr) {
 }
 function startMove(dc, dr) {
   player.fc = player.c; player.fr = player.r; player.c += dc; player.r += dr; player.t = 0; player.moving = true;
-  // pick a walk cycle from the screen direction: front for down-ish, profile for left/right, back for up-ish
-  if (dc && dr) { if (dc > 0 && dr > 0) player.dir = 'south', player.flip = false; else if (dc < 0 && dr < 0) player.dir = 'north', player.flip = true; else if (dc > 0) player.dir = 'east', player.flip = false; else player.dir = 'east', player.flip = true; }
-  else if (dr > 0) { player.dir = 'south'; player.flip = false; }
-  else if (dr < 0) { player.dir = 'north'; player.flip = true; }
-  else if (dc > 0) { player.dir = 'east'; player.flip = false; }
-  else { player.dir = 'east'; player.flip = true; }
+  // pick a walk cycle from the screen direction. Sheet facing: front row faces slightly left,
+  // profile row faces LEFT, back row faces slightly right. flip=true mirrors to face right.
+  if (dc && dr) { if (dc > 0 && dr > 0) player.dir = 'south', player.flip = false; else if (dc < 0 && dr < 0) player.dir = 'north', player.flip = false; else if (dc > 0) player.dir = 'east', player.flip = true; else player.dir = 'east', player.flip = false; }
+  else if (dr > 0) { player.dir = 'south'; player.flip = false; }       // down-left
+  else if (dr < 0) { player.dir = 'north'; player.flip = false; }      // up-right
+  else if (dc > 0) { player.dir = 'east'; player.flip = true; }        // down-right
+  else { player.dir = 'east'; player.flip = false; }                   // up-left
   Audio8.step(); return true;
 }
 
@@ -300,7 +295,7 @@ function transition() {
 function ending() {
   state = 'wait'; fade.style.opacity = 1; Audio8.stop();
   setTimeout(() => {
-    overlay.innerHTML = `<h1>THE END</h1><img src="levels/title.png" alt=""><p>Comfy Org moved from the lavender Victorian house<br>to 201 Spear Street, Suite 1700, San Francisco.<br><br>Starring Yoland.<br>Featuring Deep, who is now very secure.<br>And the duck.<br><br>Pixel art made with ComfyUI. Made for the Comfy hackathon.</p><div class="press">PRESS ENTER / TAP TO PLAY AGAIN</div>`;
+    overlay.innerHTML = `<h1>THE END</h1><img src="levels/title.png" alt=""><p>Comfy Org moved from the lavender Victorian house<br>to 201 Spear Street, Suite 1700, San Francisco.<br><br>Starring Yoland.<br>Featuring Deep, Jedrzej and Purz, who are now inside.<br>And the duck.<br><br>Pixel art made with ComfyUI. Made for the Comfy hackathon.</p><div class="press">PRESS ENTER / TAP TO PLAY AGAIN</div>`;
     overlay.classList.remove('hidden'); $('hud').classList.add('hidden'); fade.style.opacity = 0; state = 'end';
   }, 900);
 }
@@ -404,6 +399,6 @@ function frame(t) {
   update(dt); draw(t); requestAnimationFrame(frame);
 }
 
-window.__game = { startLevel, get state() { return state; }, get player() { return player; }, done };
+window.__game = { startLevel, keys, tryMove, passable, get state() { return state; }, get player() { return player; }, done };
 Promise.all([loadImg('levels/yoland_sheet.png'), fetch('levels/yoland.json').then(r => r.json())]).then(([i, a]) => { hero = i; ANIM = a; requestAnimationFrame(frame); });
 })();

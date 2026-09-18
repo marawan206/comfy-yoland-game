@@ -1,8 +1,8 @@
 # Comfy Org: The Move
 
 An 8-bit isometric story game about Comfy Org moving from the lavender Victorian house
-to 201 Spear Street, Suite 1700, San Francisco. Starring Yoland. Featuring Deep, who can
-no longer lock himself out of the office.
+to 201 Spear Street, Suite 1700, San Francisco. Starring Yoland. Featuring Deep, Jedrzej and Purz, who
+can no longer get locked out of the office.
 
 Built in an hour for the Comfy hackathon. All pixel art was generated with ComfyUI
 (GPT Image 2.5 Flare through the Playset workflows in `playset-workflows/`).
